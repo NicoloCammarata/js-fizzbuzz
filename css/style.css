@@ -1,0 +1,9 @@
+
+
+body{
+    padding: 0 100px ;
+}
+
+#lista> *{
+    border: 1px black solid;
+}

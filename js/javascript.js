@@ -8,7 +8,7 @@
 
 
 
-//let lista = document.getElementById("lista")
+let lista = document.getElementById("lista")
 //n.innerHTML = "<li> n </li>"
 
 for (
@@ -25,26 +25,26 @@ for (
 
     if(n % divisore == 0 && n % divisore2 == 0){
         console.log("buzz");
-        lista.innerHTML += "<li>" + "elemento " + "fizzbuzz" + "</li>";
+        lista.innerHTML += '<div class="col-2 m-2 bg-warning">' + "elemento " + "fizzbuzz" + "</div>";
        
         
     }
     else if(n % divisore2 == 0){
         console.log("fizz");
-        lista.innerHTML += "<li>" + "elemento " + "fizz" + "</li>";
+        lista.innerHTML += '<div class="col-2 m-2 bg-danger">' + "elemento " + "fizz" + "</div>";
        
         
     }
     else if(n % divisore == 0){
         console.log("buzz");
-        lista.innerHTML += "<li>" + "elemento " + "buzz" + "</li>";
+        lista.innerHTML += '<div class="col-2 m-2 bg-primary">' + "elemento " + "buzz" + "</div>";
        
         
     }
     
     else if(n % divisore2 != 0){
-        console.log("fizz");
-        lista.innerHTML += "<li>elemento " + (n ) + "</li>";
+        console.log(n);
+        lista.innerHTML += '<div class="col-2 m-2">elemento ' + (n ) + "</div>";
        
         
     }
