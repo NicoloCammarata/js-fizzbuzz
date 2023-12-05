@@ -4,19 +4,63 @@
 //Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz".
 
 
-let n = 0;
 
-for(n = 0; n < 100 ; n++ ){
-    console.log(n)
+
+
+
+//let lista = document.getElementById("lista")
+//n.innerHTML = "<li> n </li>"
+
+for (
+    n = 1;              
+    n <= 100;              
+    n++                
+) {
+    
+    console.log(n);
+
+    let divisore = 3;
+    let divisore2 = 5;
+
+
+    if(n % divisore == 0 && n % divisore2 == 0){
+        console.log("buzz");
+        lista.innerHTML += "<li>" + "elemento " + "fizzbuzz" + "</li>";
+       
+        
+    }
+    else if(n % divisore2 == 0){
+        console.log("fizz");
+        lista.innerHTML += "<li>" + "elemento " + "fizz" + "</li>";
+       
+        
+    }
+    else if(n % divisore == 0){
+        console.log("buzz");
+        lista.innerHTML += "<li>" + "elemento " + "buzz" + "</li>";
+       
+        
+    }
+    
+    else if(n % divisore2 != 0){
+        console.log("fizz");
+        lista.innerHTML += "<li>elemento " + (n ) + "</li>";
+       
+        
+    }
+    
+    
+
+
+    
 }
 
-let ndivisore = 3;
-
-let resto = n % ndivisore;
-console.log(resto)
 
 
-if (resto == 0 ){
-    n = "buzz"
-    console.log(n)
-}
+
+
+
+
+
+
+
